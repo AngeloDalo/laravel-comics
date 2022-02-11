@@ -1,0 +1,35 @@
+footer {
+    padding: 0 10%;
+    position: relative;
+    background-image: url("{{asset('img/footer-bg.jpg')}}"); 
+    background-position: center;
+    background-size: contain;
+    img {
+        position: absolute;
+        right: 200px;
+        height: 100%;
+    }
+    .container-footer {
+        display: flex;
+        padding-top: 2em;
+        padding-bottom: 3em;
+        div {
+            margin-right: 1.5em;
+            ul {
+                list-style: none;
+                margin-bottom: 1em;
+                li:first-child {
+                    color: black;
+                    font-size: 1em;
+                    font-weight: bold;
+                    margin-bottom: 1em;
+                }
+                li a {
+                    color: grey;
+                    text-decoration: none;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}

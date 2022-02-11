@@ -3,7 +3,7 @@
         <span>DC POWER VIZA</span>
         <span>ADDICTIONAL DC SITES</span>
     </div>
-    <div class="container">
+    <div class="container-header">
         <div class="image">
             <img src="{{asset('img\dc-logo.png')}}" alt="dc-logo">
         </div>

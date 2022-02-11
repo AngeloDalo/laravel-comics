@@ -22,35 +22,71 @@ html {
   margin-left: 2em;
 }
 
-.container {
+.container-header {
   padding: 0em 10%;
   display: flex;
   align-items: center;
   height: 107px;
   min-width: 1143px;
 }
-.container .image {
+.container-header .image {
   width: 20%;
 }
-.container ul {
+.container-header ul {
   width: 80%;
   height: 100%;
   display: flex;
   list-style: none;
 }
-.container ul li {
+.container-header ul li {
   line-height: 5em;
   display: block;
   padding: 0.8em;
   height: 100%;
 }
-.container ul li a {
+.container-header ul li a {
   font-weight: bold;
   font-size: 0.8em;
   display: block;
   text-decoration: none;
   color: black;
 }
-.container ul li:hover, .container ul li:active {
+.container-header ul li:hover, .container-header ul li:active {
   border-bottom: 5px solid #0282f9;
+}
+
+footer {
+  padding: 0 10%;
+  position: relative;
+  background-image: url("{{asset('img/footer-bg.jpg')}}");
+  background-position: center;
+  background-size: contain;
+}
+footer img {
+  position: absolute;
+  right: 200px;
+  height: 100%;
+}
+footer .container-footer {
+  display: flex;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+footer .container-footer div {
+  margin-right: 1.5em;
+}
+footer .container-footer div ul {
+  list-style: none;
+  margin-bottom: 1em;
+}
+footer .container-footer div ul li:first-child {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+footer .container-footer div ul li a {
+  color: grey;
+  text-decoration: none;
+  font-size: 0.8em;
 }
