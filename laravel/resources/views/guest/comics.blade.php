@@ -6,7 +6,20 @@
 
 @section('content')
   <main class="products">
-      ciao
+    <div class="jumbotron">
+        <div class="current-series">CURRENT-SERIES</div>
+    </div>
+    <div class="container up">
+        <div class="container-titles">
+            @foreach ($comics as $comic)
+                <div class="title">
+                    <img class="title-image" src="{{asset('img\dc-logo.png')}}" alt="">
+                    <h2> {{$comic['title']}} </h2>
+                </div>
+            @endforeach
+        </div>
+        <button class="load-more">LOAD-MORE</button>
+    </div>
   </main>
 @endsection
 
