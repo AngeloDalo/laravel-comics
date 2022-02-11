@@ -1,0 +1,46 @@
+.container-fluid {
+    width: 100%;
+    background-color: $heavenlyDC;
+    font-size: 0.8em;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2em;
+    span {
+        margin-left: 2em;
+    }
+}
+
+.container {
+    padding: 0em 10%;
+    display: flex;
+    align-items: center;
+    height: 107px;
+    min-width: 1143px;  
+    .image {
+        width: 20%;
+    }
+    ul {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        list-style: none;
+            li {
+                line-height: 5em;
+                display: block;
+                padding: 0.8em;
+                height: 100%;
+                a {
+                    font-weight:  bold;
+                    font-size: 0.8em;
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                }
+                &:hover,
+                &:active {
+                    border-bottom: 5px solid $heavenlyDC;
+                }   
+            }
+    }
+}
