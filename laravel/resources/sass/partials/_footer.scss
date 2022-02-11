@@ -1,15 +1,15 @@
 footer {
-    padding: 0 10%;
     position: relative;
-    background-image: url("{{asset('img/footer-bg.jpg')}}"); 
+    background-image: url("../../img/footer-bg.jpg"); 
     background-position: center;
     background-size: contain;
-    img {
+    .background-img {
         position: absolute;
         right: 200px;
-        height: 100%;
+        height: 78%;
     }
     .container-footer {
+        padding: 0 10%;
         display: flex;
         padding-top: 2em;
         padding-bottom: 3em;
@@ -19,7 +19,7 @@ footer {
                 list-style: none;
                 margin-bottom: 1em;
                 li:first-child {
-                    color: black;
+                    color: white;
                     font-size: 1em;
                     font-weight: bold;
                     margin-bottom: 1em;
@@ -28,6 +28,42 @@ footer {
                     color: grey;
                     text-decoration: none;
                     font-size: 0.8em;
+                }
+            }
+        }
+    }
+    .contact {
+        padding: 0 10%;
+        width: 100%;
+        background-color: $greyDC;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        .container-footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button {
+                background-color: $greyDC;
+                color: white;
+                border: 4px solid $heavenlyDC;
+                padding: 1em;
+                cursor: pointer;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                li:first-child {
+                    color: $heavenlyDC;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+                li {
+                    margin-left: 1em;
+                }
+                .link a img {
+                    width: 30px !important;
+                    height: 30px !important;
                 }
             }
         }

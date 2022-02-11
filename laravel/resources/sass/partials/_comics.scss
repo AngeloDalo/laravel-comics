@@ -2,7 +2,7 @@ main {
     .jumbotron {
         width: 100%;
         height: 400px;
-        background-image: url('');
+        background-image: url("../../img/jumbotron.jpg"); 
         background-position: center;
         background-position-y: initial;
         position: relative;
@@ -49,5 +49,8 @@ main {
             height: 50px;
             font-weight: bold;
         }
+    }
+    .connections {
+        background-color: $heavenlyDC;
     }
 }

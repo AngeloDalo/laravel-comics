@@ -20,4 +20,7 @@
             <li><a href="#">SHOP</a></li>
         </ul>
     </div>
+    <div class="search">
+        
+    </div>
 </header>

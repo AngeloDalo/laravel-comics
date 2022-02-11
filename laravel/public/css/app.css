@@ -15,7 +15,7 @@ main {
 main .jumbotron {
   width: 100%;
   height: 400px;
-  background-image: url("");
+  background-image: url("../../img/jumbotron.jpg");
   background-position: center;
   background-position-y: initial;
   position: relative;
@@ -61,6 +61,9 @@ main .container .load-more {
   width: 150px;
   height: 50px;
   font-weight: bold;
+}
+main .connections {
+  background-color: #0282f9;
 }
 
 .container-fluid {
@@ -110,18 +113,18 @@ main .container .load-more {
 }
 
 footer {
-  padding: 0 10%;
   position: relative;
-  background-image: url("{{asset('img/footer-bg.jpg')}}");
+  background-image: url("../../img/footer-bg.jpg");
   background-position: center;
   background-size: contain;
 }
-footer img {
+footer .background-img {
   position: absolute;
   right: 200px;
-  height: 100%;
+  height: 78%;
 }
 footer .container-footer {
+  padding: 0 10%;
   display: flex;
   padding-top: 2em;
   padding-bottom: 3em;
@@ -134,7 +137,7 @@ footer .container-footer div ul {
   margin-bottom: 1em;
 }
 footer .container-footer div ul li:first-child {
-  color: black;
+  color: white;
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1em;
@@ -143,4 +146,40 @@ footer .container-footer div ul li a {
   color: grey;
   text-decoration: none;
   font-size: 0.8em;
+}
+footer .contact {
+  padding: 0 10%;
+  width: 100%;
+  background-color: #303030;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+footer .contact .container-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .contact .container-footer-bottom button {
+  background-color: #303030;
+  color: white;
+  border: 4px solid #0282f9;
+  padding: 1em;
+  cursor: pointer;
+}
+footer .contact .container-footer-bottom ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+footer .contact .container-footer-bottom ul li:first-child {
+  color: #0282f9;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+footer .contact .container-footer-bottom ul li {
+  margin-left: 1em;
+}
+footer .contact .container-footer-bottom ul .link a img {
+  width: 30px !important;
+  height: 30px !important;
 }

@@ -1,5 +1,5 @@
 <footer>
-    <img src="{{asset('img\dc-logo-bg.png')}}" alt="dc-logo">
+    <img class="background-img" src="{{asset('img\dc-logo-bg.png')}}" alt="dc-logo">
     <div class="container-footer">
         <div class="link-dc-shop">
             <ul>
@@ -42,6 +42,19 @@
                 <li><a href="#">DC Kids</a></li>
                 <li><a href="#">DC Universe</a></li>
                 <li><a href="#">DC Power Viza</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="container-footer-bottom">
+            <button>SIGN-UP NOW!</button>
+            <ul>
+                <li>FOLLOW US</li>
+                <li class="link"><a href="#"><img src="{{asset('img\footer-facebook.png')}}" alt="facebook-logo"></a></li>
+                <li class="link"><a href="#"><img src="{{asset('img\footer-twitter.png')}}" alt="twitter-logo"></a></li>
+                <li class="link"><a href="#"><img src="{{asset('img\footer-youtube.png')}}" alt="youtube-logo"></a></li>
+                <li class="link"><a href="#"><img src="{{asset('img\footer-pinterest.png')}}" alt="pinterest-logo"></a></li>
+                <li class="link"><a href="#"><img src="{{asset('img\footer-periscope.png')}}" alt="periscope-logo"></a></li>
             </ul>
         </div>
     </div>
