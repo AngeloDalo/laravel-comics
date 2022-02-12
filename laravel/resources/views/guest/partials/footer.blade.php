@@ -45,6 +45,7 @@
             </ul>
         </div>
     </div>
+    <p>All Site Content TM and &copy; 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved. <a href="#">Cookies Settings</a></p>
     <div class="contact">
         <div class="container-footer-bottom">
             <button>SIGN-UP NOW!</button>

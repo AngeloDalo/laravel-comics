@@ -32,6 +32,15 @@ footer {
             }
         }
     }
+    p {
+        padding: 0 40% 0 10%;
+        font-size: 0.9em;
+        color: grey;
+        a {
+            color: $heavenlyDC;
+            text-decoration: none;
+        }
+    }
     .contact {
         padding: 0 10%;
         width: 100%;
