@@ -24,7 +24,7 @@
       <div class="container down">
           <img class="title-image" src="{{asset('img\cta-icons.png')}}" alt="">
       </div>
-  </div>
+    </div>
   </main>
 @endsection
 

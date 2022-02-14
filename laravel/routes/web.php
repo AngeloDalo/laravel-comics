@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/comics', function () {
     $data = ['series' => config('series')];
     return view('guest.comics', $data);
 })->name('comics');
 
-Route::get('/{id}', function ($id) {
+Route::get('/comics/{id}', function ($id) {
     $collection = collect(config('series'));
     $comic = $collection->where('id', $id);
 

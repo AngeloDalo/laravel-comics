@@ -60,5 +60,10 @@
             <p>On Sale Date: <span>{{$comic['sale_date']}}</span></p>
         </div>
     </div>
+    <div class="connections">
+        <div class="container down">
+            <img class="title-image" src="{{asset('img\cta-icons.png')}}" alt="">
+        </div>
+    </div>
 </main>
 @endsection
