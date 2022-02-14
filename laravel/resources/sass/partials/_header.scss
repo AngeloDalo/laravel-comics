@@ -37,10 +37,13 @@
                     text-decoration: none;
                     color: black;
                 }
-                &:hover,
-                &:active {
-                    border-bottom: 5px solid $heavenlyDC;
+                &:hover a,
+                &:active a{
+                    color: blue;
                 }   
+            }
+            .active {
+                border-bottom: 5px solid $heavenlyDC;
             }
     }
     .search {

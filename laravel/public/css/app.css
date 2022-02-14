@@ -9361,8 +9361,12 @@ main .connections {
   color: black;
 }
 
-.container-header ul li:hover,
-.container-header ul li:active {
+.container-header ul li:hover a,
+.container-header ul li:active a {
+  color: blue;
+}
+
+.container-header ul .active {
   border-bottom: 5px solid #0282f9;
 }
 
