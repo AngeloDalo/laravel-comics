@@ -34,6 +34,15 @@ html {
   width: 200px;
 }
 
+.single-comic .jumbotron-comic .current-series .comic-book {
+  color: white;
+  background-color: #0282f9;
+  width: 100px;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
 .single-comic .jumbotron-comic .current-series img {
   width: 100%;
   height: 90%;

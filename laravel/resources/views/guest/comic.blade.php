@@ -12,6 +12,9 @@
 <main class="single-comic">
     <div class="jumbotron-comic">
         <div class="current-series">
+            <div class="comic-book">
+                {{$comic['type']}}
+            </div>
             <img class="title-image" src="{{$comic['thumb']}}" alt="">
             <button>view gallery</button>
         </div>
