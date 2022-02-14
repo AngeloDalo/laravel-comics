@@ -16,6 +16,7 @@ mix.js('resources/js/app.js', 'public/js')
         'node_modules/@fortawesome/fontawesome-free/webfonts',
         'public/webfonts'
     )
+    .sass('resources/sass/comic.scss', 'public/css')
     .sass('resources/sass/app.scss', 'public/css').options({
         processCssUrls: false
     });
