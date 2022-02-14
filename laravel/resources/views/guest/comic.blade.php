@@ -1,7 +1,7 @@
 @extends('guest.layout.base')
 
 @section('documentTitle')
-  Comic
+  {{ $nomePagina }}
 @endsection
 
 @section('css')
