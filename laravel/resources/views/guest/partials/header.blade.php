@@ -21,7 +21,7 @@
         </ul>
         <div class="search">
             Search
-            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <i class="fas fa-search"></i>
         </div>
     </div>
 </header>

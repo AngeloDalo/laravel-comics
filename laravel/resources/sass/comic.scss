@@ -2,6 +2,7 @@
 @import "partials/_common";
 
 .single-comic {
+    background-color: white;
     .jumbotron-comic {
         width: 100%;
         height: 400px;
@@ -9,5 +10,110 @@
         background-position: center;
         background-position-y: initial;
         position: relative;
+    }
+    .jumbotron-bluDC {
+        width: 100%;
+        height: 50px;
+        background-color: $heavenlyDC;
+        margin-bottom: 3em;
+    }
+    .comic-show {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        .description {
+            padding: 1em;
+            h1 {
+                color: #6e645e;
+                text-transform: uppercase;
+            }
+            width: 70%;
+            .price-available {
+                background-color: #55ba59;
+                padding: 0 0 0 1em;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .price {
+                    width: 60%;
+                    color: #a6e377;
+                    span {
+                        color: #6e645e;
+                        font-weight: bold;
+                    }
+                }
+                .available {
+                    width: 20%;
+                    color: #a6e377;
+                    text-transform: uppercase;
+                } 
+                button {
+                    background-color: transparent;
+                    width: 20%;
+                    height: 4em;
+                    cursor: pointer;
+                    color: #6e645e;
+                }
+            }
+            p {
+                margin-top: 1em;
+                margin-bottom: 1em;
+                color: #6e645e;
+                font-size: 0.8em;
+            }
+        }
+        .adv {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 30%;
+            span {
+                text-transform: uppercase;
+                color: #6e645e;
+            }
+        }
+    }
+    .content {
+        padding-bottom: 3em;
+        padding-top: 3em;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        .talent {
+            width: 70%;
+            font-size: 0.8em;
+            color: $heavenlyDC;
+            h2 {
+                margin-bottom: 2em;
+                color: #6e645e;
+            }
+            .art-by, .written-by {
+                margin-top: 1em;
+                display: flex;
+                span {
+                    color: #6e645e;
+                    width: 50%;
+                }
+            }
+        }
+        .specs {
+            padding-left: 1em;
+            width: 30%;
+            h2 {
+                margin-bottom: 1.5em;
+                color: #6e645e;
+            }
+            p {
+                color: #6e645e;
+                display: flex;
+                justify-content: space-between;
+                .blue {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color:$heavenlyDC;
+                }
+            }
+        }
     }
 }

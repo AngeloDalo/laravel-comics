@@ -9,6 +9,10 @@ html {
   font-size: 100%;
 }
 
+.single-comic {
+  background-color: white;
+}
+
 .single-comic .jumbotron-comic {
   width: 100%;
   height: 400px;
@@ -16,5 +20,133 @@ html {
   background-position: center;
   background-position-y: initial;
   position: relative;
+}
+
+.single-comic .jumbotron-bluDC {
+  width: 100%;
+  height: 50px;
+  background-color: #0282f9;
+  margin-bottom: 3em;
+}
+
+.single-comic .comic-show {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.single-comic .comic-show .description {
+  padding: 1em;
+  width: 70%;
+}
+
+.single-comic .comic-show .description h1 {
+  color: #6e645e;
+  text-transform: uppercase;
+}
+
+.single-comic .comic-show .description .price-available {
+  background-color: #55ba59;
+  padding: 0 0 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.single-comic .comic-show .description .price-available .price {
+  width: 60%;
+  color: #a6e377;
+}
+
+.single-comic .comic-show .description .price-available .price span {
+  color: #6e645e;
+  font-weight: bold;
+}
+
+.single-comic .comic-show .description .price-available .available {
+  width: 20%;
+  color: #a6e377;
+  text-transform: uppercase;
+}
+
+.single-comic .comic-show .description .price-available button {
+  background-color: transparent;
+  width: 20%;
+  height: 4em;
+  cursor: pointer;
+  color: #6e645e;
+}
+
+.single-comic .comic-show .description p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #6e645e;
+  font-size: 0.8em;
+}
+
+.single-comic .comic-show .adv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+}
+
+.single-comic .comic-show .adv span {
+  text-transform: uppercase;
+  color: #6e645e;
+}
+
+.single-comic .content {
+  padding-bottom: 3em;
+  padding-top: 3em;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.single-comic .content .talent {
+  width: 70%;
+  font-size: 0.8em;
+  color: #0282f9;
+}
+
+.single-comic .content .talent h2 {
+  margin-bottom: 2em;
+  color: #6e645e;
+}
+
+.single-comic .content .talent .art-by,
+.single-comic .content .talent .written-by {
+  margin-top: 1em;
+  display: flex;
+}
+
+.single-comic .content .talent .art-by span,
+.single-comic .content .talent .written-by span {
+  color: #6e645e;
+  width: 50%;
+}
+
+.single-comic .content .specs {
+  padding-left: 1em;
+  width: 30%;
+}
+
+.single-comic .content .specs h2 {
+  margin-bottom: 1.5em;
+  color: #6e645e;
+}
+
+.single-comic .content .specs p {
+  color: #6e645e;
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-comic .content .specs p .blue {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0282f9;
 }
 
