@@ -11,7 +11,7 @@
     </div>
     <div class="container up">
         <div class="container-titles">
-            @foreach ($comics as $comic)
+            @foreach ($series as $comic)
                 <div class="title">
                     <img class="title-image" src="{{$comic['thumb']}}" alt="">
                     <h2> {{$comic['title']}} </h2>
