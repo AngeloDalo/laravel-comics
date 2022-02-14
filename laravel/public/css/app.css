@@ -3,6 +3,7 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2022 Fonticons, Inc.
  */
+
 .fa {
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900);
@@ -116,6 +117,7 @@
   margin-left: var(--fa-li-margin, 2.5em);
   padding-left: 0;
 }
+
 .fa-ul > li {
   position: relative;
 }
@@ -271,14 +273,14 @@
 
 @media (prefers-reduced-motion: reduce) {
   .fa-beat,
-.fa-bounce,
-.fa-fade,
-.fa-beat-fade,
-.fa-flip,
-.fa-pulse,
-.fa-shake,
-.fa-spin,
-.fa-spin-pulse {
+  .fa-bounce,
+  .fa-fade,
+  .fa-beat-fade,
+  .fa-flip,
+  .fa-pulse,
+  .fa-shake,
+  .fa-spin,
+  .fa-spin-pulse {
     -webkit-animation-delay: -1ms;
             animation-delay: -1ms;
     -webkit-animation-duration: 1ms;
@@ -289,182 +291,231 @@
     transition-duration: 0s;
   }
 }
+
 @-webkit-keyframes fa-beat {
   0%, 90% {
     transform: scale(1);
   }
+
   45% {
     transform: scale(var(--fa-beat-scale, 1.25));
   }
 }
+
 @keyframes fa-beat {
   0%, 90% {
     transform: scale(1);
   }
+
   45% {
     transform: scale(var(--fa-beat-scale, 1.25));
   }
 }
+
 @-webkit-keyframes fa-bounce {
   0% {
     transform: scale(1, 1) translateY(0);
   }
+
   10% {
     transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
   }
+
   30% {
     transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
   }
+
   50% {
     transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
   }
+
   57% {
     transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
   }
+
   64% {
     transform: scale(1, 1) translateY(0);
   }
+
   100% {
     transform: scale(1, 1) translateY(0);
   }
 }
+
 @keyframes fa-bounce {
   0% {
     transform: scale(1, 1) translateY(0);
   }
+
   10% {
     transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
   }
+
   30% {
     transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
   }
+
   50% {
     transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
   }
+
   57% {
     transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
   }
+
   64% {
     transform: scale(1, 1) translateY(0);
   }
+
   100% {
     transform: scale(1, 1) translateY(0);
   }
 }
+
 @-webkit-keyframes fa-fade {
   50% {
     opacity: var(--fa-fade-opacity, 0.4);
   }
 }
+
 @keyframes fa-fade {
   50% {
     opacity: var(--fa-fade-opacity, 0.4);
   }
 }
+
 @-webkit-keyframes fa-beat-fade {
   0%, 100% {
     opacity: var(--fa-beat-fade-opacity, 0.4);
     transform: scale(1);
   }
+
   50% {
     opacity: 1;
     transform: scale(var(--fa-beat-fade-scale, 1.125));
   }
 }
+
 @keyframes fa-beat-fade {
   0%, 100% {
     opacity: var(--fa-beat-fade-opacity, 0.4);
     transform: scale(1);
   }
+
   50% {
     opacity: 1;
     transform: scale(var(--fa-beat-fade-scale, 1.125));
   }
 }
+
 @-webkit-keyframes fa-flip {
   50% {
     transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
   }
 }
+
 @keyframes fa-flip {
   50% {
     transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
   }
 }
+
 @-webkit-keyframes fa-shake {
   0% {
     transform: rotate(-15deg);
   }
+
   4% {
     transform: rotate(15deg);
   }
+
   8%, 24% {
     transform: rotate(-18deg);
   }
+
   12%, 28% {
     transform: rotate(18deg);
   }
+
   16% {
     transform: rotate(-22deg);
   }
+
   20% {
     transform: rotate(22deg);
   }
+
   32% {
     transform: rotate(-12deg);
   }
+
   36% {
     transform: rotate(12deg);
   }
+
   40%, 100% {
     transform: rotate(0deg);
   }
 }
+
 @keyframes fa-shake {
   0% {
     transform: rotate(-15deg);
   }
+
   4% {
     transform: rotate(15deg);
   }
+
   8%, 24% {
     transform: rotate(-18deg);
   }
+
   12%, 28% {
     transform: rotate(18deg);
   }
+
   16% {
     transform: rotate(-22deg);
   }
+
   20% {
     transform: rotate(22deg);
   }
+
   32% {
     transform: rotate(-12deg);
   }
+
   36% {
     transform: rotate(12deg);
   }
+
   40%, 100% {
     transform: rotate(0deg);
   }
 }
+
 @-webkit-keyframes fa-spin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 @keyframes fa-spin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 .fa-rotate-90 {
   transform: rotate(90deg);
 }
@@ -526,6 +577,7 @@
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
+
 .fa-0::before {
   content: "0 ";
 }
@@ -7237,7 +7289,9 @@ readers do not read off random characters that represent icons */
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2022 Fonticons, Inc.
  */
-:root, :host {
+
+:root,
+:host {
   --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
 }
 
@@ -7246,8 +7300,9 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype");
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2?f817938f131b0cabee81e59a96f9c2a6) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf?35307505c129ab1f9173f7917b50756f) format("truetype");
 }
+
 .far,
 .fa-regular {
   font-family: "Font Awesome 6 Free";
@@ -7259,7 +7314,9 @@ readers do not read off random characters that represent icons */
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2022 Fonticons, Inc.
  */
-:root, :host {
+
+:root,
+:host {
   --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
 }
 
@@ -7268,8 +7325,9 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype");
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?297973a488f688271dd223d542ba2697) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?ffc89d3ea2e2c3ba295689305f91ca78) format("truetype");
 }
+
 .fas,
 .fa-solid {
   font-family: "Font Awesome 6 Free";
@@ -7281,7 +7339,9 @@ readers do not read off random characters that represent icons */
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2022 Fonticons, Inc.
  */
-:root, :host {
+
+:root,
+:host {
   --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
 }
 
@@ -7290,8 +7350,9 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.ttf") format("truetype");
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?a9afdb72826cde196ddf29eb8f9d0f8f) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?0fbfc862056bad982c93ba51460e31d9) format("truetype");
 }
+
 .fab,
 .fa-brands {
   font-family: "Font Awesome 6 Brands";
@@ -9184,14 +9245,16 @@ html {
 main {
   background-color: black;
 }
+
 main .jumbotron {
   width: 100%;
   height: 400px;
-  background-image: url("../../img/jumbotron.jpg");
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
   background-position: center;
   background-position-y: initial;
   position: relative;
 }
+
 main .jumbotron .current-series {
   height: 50px;
   color: white;
@@ -9204,29 +9267,35 @@ main .jumbotron .current-series {
   width: 200px;
   background-color: #0282f9;
 }
+
 main .container {
   padding: 1em 10%;
   margin-top: 2em;
   color: white;
   text-align: center;
 }
+
 main .container .container-titles {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 main .container .container-titles .title {
   margin: 1em;
   width: 12.5%;
 }
+
 main .container .container-titles .title img {
   width: 100%;
 }
+
 main .container .container-titles .title h2 {
   width: 100%;
   font-size: 1em;
 }
+
 main .container .load-more {
   background-color: #0282f9;
   color: white;
@@ -9234,6 +9303,7 @@ main .container .load-more {
   height: 50px;
   font-weight: bold;
 }
+
 main .connections {
   background-color: #0282f9;
 }
@@ -9247,6 +9317,7 @@ main .connections {
   justify-content: flex-end;
   margin-bottom: 2em;
 }
+
 .container-fluid span {
   margin-left: 2em;
 }
@@ -9258,21 +9329,25 @@ main .connections {
   height: 107px;
   min-width: 1143px;
 }
+
 .container-header .image {
   width: 20%;
 }
+
 .container-header ul {
   width: 80%;
   height: 100%;
   display: flex;
   list-style: none;
 }
+
 .container-header ul li {
   line-height: 5em;
   display: block;
   padding: 0.8em;
   height: 100%;
 }
+
 .container-header ul li a {
   font-weight: bold;
   font-size: 0.8em;
@@ -9280,9 +9355,12 @@ main .connections {
   text-decoration: none;
   color: black;
 }
-.container-header ul li:hover, .container-header ul li:active {
+
+.container-header ul li:hover,
+.container-header ul li:active {
   border-bottom: 5px solid #0282f9;
 }
+
 .container-header .search {
   display: flex;
   justify-content: flex-end;
@@ -9292,48 +9370,57 @@ main .connections {
 
 footer {
   position: relative;
-  background-image: url("../../img/footer-bg.jpg");
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
   background-position: center;
   background-size: contain;
 }
+
 footer .background-img {
   position: absolute;
   right: 200px;
   height: 78%;
 }
+
 footer .container-footer {
   padding: 0 10%;
   display: flex;
   padding-top: 2em;
   padding-bottom: 3em;
 }
+
 footer .container-footer div {
   margin-right: 1.5em;
 }
+
 footer .container-footer div ul {
   list-style: none;
   margin-bottom: 1em;
 }
+
 footer .container-footer div ul li:first-child {
   color: white;
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1em;
 }
+
 footer .container-footer div ul li a {
   color: grey;
   text-decoration: none;
   font-size: 0.8em;
 }
+
 footer p {
   padding: 0 40% 0 10%;
   font-size: 0.9em;
   color: grey;
 }
+
 footer p a {
   color: #0282f9;
   text-decoration: none;
 }
+
 footer .contact {
   padding: 0 10%;
   width: 100%;
@@ -9341,11 +9428,13 @@ footer .contact {
   padding-top: 2em;
   padding-bottom: 2em;
 }
+
 footer .contact .container-footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 footer .contact .container-footer-bottom button {
   background-color: #303030;
   color: white;
@@ -9353,20 +9442,25 @@ footer .contact .container-footer-bottom button {
   padding: 1em;
   cursor: pointer;
 }
+
 footer .contact .container-footer-bottom ul {
   display: flex;
   align-items: center;
   list-style: none;
 }
+
 footer .contact .container-footer-bottom ul li:first-child {
   color: #0282f9;
   font-size: 1.2em;
   font-weight: bold;
 }
+
 footer .contact .container-footer-bottom ul li {
   margin-left: 1em;
 }
+
 footer .contact .container-footer-bottom ul .link a img {
   width: 30px !important;
   height: 30px !important;
 }
+

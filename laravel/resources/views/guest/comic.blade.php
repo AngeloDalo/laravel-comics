@@ -9,7 +9,9 @@
 @endsection
 
 @section('content')
-  <div class="product__page">
-      singolo prodotto
-  </div>
+<main class="single-comic">
+    <div class="jumbotron-comic">
+        
+    </div>
+</main>
 @endsection

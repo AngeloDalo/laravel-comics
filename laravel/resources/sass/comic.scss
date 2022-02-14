@@ -1,0 +1,13 @@
+@import "partials/_variables";
+@import "partials/_common";
+
+.single-comic {
+    .jumbotron-comic {
+        width: 100%;
+        height: 400px;
+        background-image: url("../../public/img/jumbotron.jpg"); 
+        background-position: center;
+        background-position-y: initial;
+        position: relative;
+    }
+}
