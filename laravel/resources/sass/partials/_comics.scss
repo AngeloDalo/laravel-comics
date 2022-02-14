@@ -40,6 +40,14 @@ main {
                 width: 100%;
                 font-size: 1em;
             }
+            .title {
+                h2 {
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
         }
         text-align: center;
         .load-more {

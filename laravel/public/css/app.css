@@ -9296,6 +9296,11 @@ main .container .container-titles .title h2 {
   font-size: 1em;
 }
 
+main .container .container-titles .title h2 a {
+  color: white;
+  text-decoration: none;
+}
+
 main .container .load-more {
   background-color: #0282f9;
   color: white;

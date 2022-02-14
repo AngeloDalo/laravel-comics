@@ -14,7 +14,7 @@
             @foreach ($series as $comic)
                 <div class="title">
                     <img class="title-image" src="{{$comic['thumb']}}" alt="">
-                    <h2> {{$comic['title']}} </h2>
+                    <h2><a href="{{ route('comic', $comic['id']) }}">{{$comic['title']}}</a></h2>
                 </div>
             @endforeach
         </div>
