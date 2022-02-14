@@ -11,6 +11,10 @@
 @section('content')
 <main class="single-comic">
     <div class="jumbotron-comic">
+        <div class="current-series">
+            <img class="title-image" src="{{$comic['thumb']}}" alt="">
+            <button>view gallery</button>
+        </div>
     </div>
     <div class="jumbotron-bluDC">
     </div>
